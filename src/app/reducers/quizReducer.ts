@@ -11,9 +11,13 @@ export const userAnsReducer = (state = initialState, action: quizType) => {
 			const ans = action.payload;
 			const exist = state.answer.find(a => a.QId === ans.QId);
 			if (exist) {
-				return { answer: state.answer.map(a => (a.QId === ans.QId ? ans : a)) };
+				const Answers = state.answer.map(a => (a.QId === ans.QId ? ans : a));
+				localStorage.setItem("persist:answer", JSON.stringify(Answers));
+				return { answer: Answers };
 			}
-			return { answer: [...state.answer, action.payload] };
+			const Answers = [...state.answer, action.payload];
+			localStorage.setItem("persist:answer", JSON.stringify(Answers));
+			return { answer: Answers };
 
 		case quizActionType.USER_ANS_RESET:
 			return initialState;

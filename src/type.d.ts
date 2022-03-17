@@ -9,11 +9,6 @@ interface AnswerType {
 	ans: string;
 }
 
-interface CorrectAnswerType {
-	QId: number;
-	ans: string;
-}
-
 interface InitStateForUserAns {
 	answer: AnswerType[];
 }

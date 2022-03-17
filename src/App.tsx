@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import HomeScreen from "./screen/HomeScreen";
 import QuestionsScreen from "./screen/QuestionsScreen";
+import ResultScreen from "./screen/ResultScreen";
 
 function App() {
 	return (
@@ -13,6 +14,7 @@ function App() {
 					<Routes>
 						<Route path="/" element={<HomeScreen />} />
 						<Route path="/quiz/:questionId" element={<QuestionsScreen />} />
+						<Route path="/quiz/result" element={<ResultScreen />} />
 					</Routes>
 				</Container>
 			</BrowserRouter>

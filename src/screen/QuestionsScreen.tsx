@@ -72,9 +72,22 @@ const QuestionsScreen = () => {
 						))}
 					</Form.Group>
 					{Number(questionId) === questions.length ? (
-						<Button className="mt-3" type="submit">
-							Submit
-						</Button>
+						<LinkContainer
+							aria-disabled={
+								answer.find(a => a.QId === Number(questionId)) ? false : true
+							}
+							to="/quiz/result"
+						>
+							<Button
+								disabled={
+									answer.find(a => a.QId === Number(questionId)) ? false : true
+								}
+								className="mt-3"
+								type="submit"
+							>
+								Submit
+							</Button>
+						</LinkContainer>
 					) : (
 						<div className="d-flex justify-content-between align-items-center mt-3">
 							<LinkContainer to={`/quiz/${Number(questionId) - 1}`}>

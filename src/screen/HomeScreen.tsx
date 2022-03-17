@@ -9,6 +9,7 @@ const HomeScreen = () => {
 			style={{ height: "100vh" }}
 		>
 			<h1>Welcome to Quiz Competition!</h1>
+			<h3>!!Recharge your brain!!</h3>
 			<LinkContainer to={`/quiz/${1}`}>
 				<Button className="btn">Start Quiz</Button>
 			</LinkContainer>

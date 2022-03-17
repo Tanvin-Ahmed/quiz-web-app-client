@@ -5,7 +5,7 @@ import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 const PageNotFound = () => {
 	return (
 		<div
-			className="d-flex justify-content-center align-items-center"
+			className="d-flex justify-content-center align-items-center flex-column"
 			style={{ height: "100vh" }}
 		>
 			<h1>PAGE NOT FOUND</h1>

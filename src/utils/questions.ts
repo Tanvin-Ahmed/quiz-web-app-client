@@ -54,26 +54,26 @@ export const questions = [
 export const correctAns = [
 	{
 		QId: 1,
-		ans: 3,
+		ans: "Operating System",
 	},
 	{
 		QId: 2,
-		ans: 2,
+		ans: "Animation/movie file",
 	},
 	{
 		QId: 3,
-		ans: 3,
+		ans: "Animation/movie file",
 	},
 	{
 		QId: 4,
-		ans: 2,
+		ans: "Field",
 	},
 	{
 		QId: 5,
-		ans: 2,
+		ans: "David Filo & Jerry Yang",
 	},
 	{
 		QId: 6,
-		ans: 1,
+		ans: "Database",
 	},
 ];

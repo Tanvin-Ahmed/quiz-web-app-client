@@ -1,6 +1,6 @@
 interface QuestionType {
 	_id: number;
-	question: string;
+	Q: string;
 	options: string[];
 }
 
@@ -11,5 +11,9 @@ interface AnswerType {
 
 interface CorrectAnswerType {
 	QId: number;
-	ans: number;
+	ans: string;
+}
+
+interface InitStateForUserAns {
+	answer: AnswerType[];
 }

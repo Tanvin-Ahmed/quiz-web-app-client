@@ -64,6 +64,9 @@ const ResultScreen = () => {
 							<h2>Excellent!!!</h2>
 						</>
 					) : null}
+					<h3>
+						{correct.length}/{answers.length}
+					</h3>
 				</div>
 				<br />
 				<ListGroup variant="flush" className="p-2">
